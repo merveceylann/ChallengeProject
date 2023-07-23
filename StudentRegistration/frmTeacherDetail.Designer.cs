@@ -31,17 +31,17 @@
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCreate = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtExam1 = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.txtExam2 = new System.Windows.Forms.TextBox();
+            this.txtExam3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -54,18 +54,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.deleteCommandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ınsertCommandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.selectCommandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.updateCommandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.updateBatchSizeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.acceptChangesDuringFillDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.acceptChangesDuringUpdateDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.continueUpdateOnErrorDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.fillLoadOptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.missingMappingActionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.missingSchemaActionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.returnProviderSpecificTypesDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.sqlDataAdapterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.connectionStringSettingsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
@@ -81,7 +69,7 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.RosyBrown;
             this.groupBox1.Controls.Add(this.maskedTextBox1);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnCreate);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label3);
@@ -105,17 +93,17 @@
             this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.maskedTextBox1.ValidatingType = typeof(int);
             // 
-            // button1
+            // btnCreate
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(186, 203);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCreate.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCreate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCreate.Location = new System.Drawing.Point(186, 203);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(94, 29);
+            this.btnCreate.TabIndex = 6;
+            this.btnCreate.Text = "Add";
+            this.btnCreate.UseVisualStyleBackColor = false;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // textBox3
             // 
@@ -161,10 +149,10 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.RosyBrown;
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txtExam1);
+            this.groupBox2.Controls.Add(this.btnUpdate);
+            this.groupBox2.Controls.Add(this.txtExam2);
+            this.groupBox2.Controls.Add(this.txtExam3);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
@@ -176,37 +164,38 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Exam Scors";
             // 
-            // textBox5
+            // txtExam1
             // 
-            this.textBox5.Location = new System.Drawing.Point(127, 57);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(153, 27);
-            this.textBox5.TabIndex = 7;
+            this.txtExam1.Location = new System.Drawing.Point(127, 57);
+            this.txtExam1.Name = "txtExam1";
+            this.txtExam1.Size = new System.Drawing.Size(153, 27);
+            this.txtExam1.TabIndex = 7;
             // 
-            // button2
+            // btnUpdate
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(186, 203);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnUpdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnUpdate.Location = new System.Drawing.Point(186, 203);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(94, 29);
+            this.btnUpdate.TabIndex = 6;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // textBox1
+            // txtExam2
             // 
-            this.textBox1.Location = new System.Drawing.Point(127, 103);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 27);
-            this.textBox1.TabIndex = 5;
+            this.txtExam2.Location = new System.Drawing.Point(127, 103);
+            this.txtExam2.Name = "txtExam2";
+            this.txtExam2.Size = new System.Drawing.Size(153, 27);
+            this.txtExam2.TabIndex = 5;
             // 
-            // textBox4
+            // txtExam3
             // 
-            this.textBox4.Location = new System.Drawing.Point(127, 151);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(153, 27);
-            this.textBox4.TabIndex = 4;
+            this.txtExam3.Location = new System.Drawing.Point(127, 151);
+            this.txtExam3.Name = "txtExam3";
+            this.txtExam3.Size = new System.Drawing.Size(153, 27);
+            this.txtExam3.TabIndex = 4;
             // 
             // label4
             // 
@@ -322,23 +311,9 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.deleteCommandDataGridViewTextBoxColumn,
-            this.ınsertCommandDataGridViewTextBoxColumn,
-            this.selectCommandDataGridViewTextBoxColumn,
-            this.updateCommandDataGridViewTextBoxColumn,
-            this.updateBatchSizeDataGridViewTextBoxColumn,
-            this.acceptChangesDuringFillDataGridViewCheckBoxColumn,
-            this.acceptChangesDuringUpdateDataGridViewCheckBoxColumn,
-            this.continueUpdateOnErrorDataGridViewCheckBoxColumn,
-            this.fillLoadOptionDataGridViewTextBoxColumn,
-            this.missingMappingActionDataGridViewTextBoxColumn,
-            this.missingSchemaActionDataGridViewTextBoxColumn,
-            this.returnProviderSpecificTypesDataGridViewCheckBoxColumn});
-            this.dataGridView1.DataSource = this.sqlDataAdapterBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.MenuHighlight;
             this.dataGridView1.Location = new System.Drawing.Point(3, 23);
@@ -347,107 +322,12 @@
             this.dataGridView1.RowTemplate.Height = 29;
             this.dataGridView1.Size = new System.Drawing.Size(990, 269);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // deleteCommandDataGridViewTextBoxColumn
-            // 
-            this.deleteCommandDataGridViewTextBoxColumn.DataPropertyName = "DeleteCommand";
-            this.deleteCommandDataGridViewTextBoxColumn.HeaderText = "DeleteCommand";
-            this.deleteCommandDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.deleteCommandDataGridViewTextBoxColumn.Name = "deleteCommandDataGridViewTextBoxColumn";
-            this.deleteCommandDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ınsertCommandDataGridViewTextBoxColumn
-            // 
-            this.ınsertCommandDataGridViewTextBoxColumn.DataPropertyName = "InsertCommand";
-            this.ınsertCommandDataGridViewTextBoxColumn.HeaderText = "InsertCommand";
-            this.ınsertCommandDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ınsertCommandDataGridViewTextBoxColumn.Name = "ınsertCommandDataGridViewTextBoxColumn";
-            this.ınsertCommandDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // selectCommandDataGridViewTextBoxColumn
-            // 
-            this.selectCommandDataGridViewTextBoxColumn.DataPropertyName = "SelectCommand";
-            this.selectCommandDataGridViewTextBoxColumn.HeaderText = "SelectCommand";
-            this.selectCommandDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.selectCommandDataGridViewTextBoxColumn.Name = "selectCommandDataGridViewTextBoxColumn";
-            this.selectCommandDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // updateCommandDataGridViewTextBoxColumn
-            // 
-            this.updateCommandDataGridViewTextBoxColumn.DataPropertyName = "UpdateCommand";
-            this.updateCommandDataGridViewTextBoxColumn.HeaderText = "UpdateCommand";
-            this.updateCommandDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.updateCommandDataGridViewTextBoxColumn.Name = "updateCommandDataGridViewTextBoxColumn";
-            this.updateCommandDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // updateBatchSizeDataGridViewTextBoxColumn
-            // 
-            this.updateBatchSizeDataGridViewTextBoxColumn.DataPropertyName = "UpdateBatchSize";
-            this.updateBatchSizeDataGridViewTextBoxColumn.HeaderText = "UpdateBatchSize";
-            this.updateBatchSizeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.updateBatchSizeDataGridViewTextBoxColumn.Name = "updateBatchSizeDataGridViewTextBoxColumn";
-            this.updateBatchSizeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // acceptChangesDuringFillDataGridViewCheckBoxColumn
-            // 
-            this.acceptChangesDuringFillDataGridViewCheckBoxColumn.DataPropertyName = "AcceptChangesDuringFill";
-            this.acceptChangesDuringFillDataGridViewCheckBoxColumn.HeaderText = "AcceptChangesDuringFill";
-            this.acceptChangesDuringFillDataGridViewCheckBoxColumn.MinimumWidth = 6;
-            this.acceptChangesDuringFillDataGridViewCheckBoxColumn.Name = "acceptChangesDuringFillDataGridViewCheckBoxColumn";
-            this.acceptChangesDuringFillDataGridViewCheckBoxColumn.Width = 125;
-            // 
-            // acceptChangesDuringUpdateDataGridViewCheckBoxColumn
-            // 
-            this.acceptChangesDuringUpdateDataGridViewCheckBoxColumn.DataPropertyName = "AcceptChangesDuringUpdate";
-            this.acceptChangesDuringUpdateDataGridViewCheckBoxColumn.HeaderText = "AcceptChangesDuringUpdate";
-            this.acceptChangesDuringUpdateDataGridViewCheckBoxColumn.MinimumWidth = 6;
-            this.acceptChangesDuringUpdateDataGridViewCheckBoxColumn.Name = "acceptChangesDuringUpdateDataGridViewCheckBoxColumn";
-            this.acceptChangesDuringUpdateDataGridViewCheckBoxColumn.Width = 125;
-            // 
-            // continueUpdateOnErrorDataGridViewCheckBoxColumn
-            // 
-            this.continueUpdateOnErrorDataGridViewCheckBoxColumn.DataPropertyName = "ContinueUpdateOnError";
-            this.continueUpdateOnErrorDataGridViewCheckBoxColumn.HeaderText = "ContinueUpdateOnError";
-            this.continueUpdateOnErrorDataGridViewCheckBoxColumn.MinimumWidth = 6;
-            this.continueUpdateOnErrorDataGridViewCheckBoxColumn.Name = "continueUpdateOnErrorDataGridViewCheckBoxColumn";
-            this.continueUpdateOnErrorDataGridViewCheckBoxColumn.Width = 125;
-            // 
-            // fillLoadOptionDataGridViewTextBoxColumn
-            // 
-            this.fillLoadOptionDataGridViewTextBoxColumn.DataPropertyName = "FillLoadOption";
-            this.fillLoadOptionDataGridViewTextBoxColumn.HeaderText = "FillLoadOption";
-            this.fillLoadOptionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.fillLoadOptionDataGridViewTextBoxColumn.Name = "fillLoadOptionDataGridViewTextBoxColumn";
-            this.fillLoadOptionDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // missingMappingActionDataGridViewTextBoxColumn
-            // 
-            this.missingMappingActionDataGridViewTextBoxColumn.DataPropertyName = "MissingMappingAction";
-            this.missingMappingActionDataGridViewTextBoxColumn.HeaderText = "MissingMappingAction";
-            this.missingMappingActionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.missingMappingActionDataGridViewTextBoxColumn.Name = "missingMappingActionDataGridViewTextBoxColumn";
-            this.missingMappingActionDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // missingSchemaActionDataGridViewTextBoxColumn
-            // 
-            this.missingSchemaActionDataGridViewTextBoxColumn.DataPropertyName = "MissingSchemaAction";
-            this.missingSchemaActionDataGridViewTextBoxColumn.HeaderText = "MissingSchemaAction";
-            this.missingSchemaActionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.missingSchemaActionDataGridViewTextBoxColumn.Name = "missingSchemaActionDataGridViewTextBoxColumn";
-            this.missingSchemaActionDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // returnProviderSpecificTypesDataGridViewCheckBoxColumn
-            // 
-            this.returnProviderSpecificTypesDataGridViewCheckBoxColumn.DataPropertyName = "ReturnProviderSpecificTypes";
-            this.returnProviderSpecificTypesDataGridViewCheckBoxColumn.HeaderText = "ReturnProviderSpecificTypes";
-            this.returnProviderSpecificTypesDataGridViewCheckBoxColumn.MinimumWidth = 6;
-            this.returnProviderSpecificTypesDataGridViewCheckBoxColumn.Name = "returnProviderSpecificTypesDataGridViewCheckBoxColumn";
-            this.returnProviderSpecificTypesDataGridViewCheckBoxColumn.Width = 125;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // sqlDataAdapterBindingSource
             // 
             this.sqlDataAdapterBindingSource.DataSource = typeof(System.Data.SqlClient.SqlDataAdapter);
-            this.sqlDataAdapterBindingSource.CurrentChanged += new System.EventHandler(this.sqlDataAdapterBindingSource_CurrentChanged);
+            //this.sqlDataAdapterBindingSource.CurrentChanged += new System.EventHandler(this.sqlDataAdapterBindingSource_CurrentChanged);
             // 
             // connectionStringSettingsBindingSource
             // 
@@ -483,7 +363,7 @@
         #endregion
 
         private GroupBox groupBox1;
-        private Button button1;
+        private Button btnCreate;
         private TextBox textBox3;
         private TextBox textBox2;
         private Label label3;
@@ -491,10 +371,10 @@
         private Label label1;
         private MaskedTextBox maskedTextBox1;
         private GroupBox groupBox2;
-        private TextBox textBox5;
-        private Button button2;
-        private TextBox textBox1;
-        private TextBox textBox4;
+        private TextBox txtExam1;
+        private Button btnUpdate;
+        private TextBox txtExam2;
+        private TextBox txtExam3;
         private Label label4;
         private Label label5;
         private Label label6;
@@ -507,18 +387,6 @@
         private Label label9;
         private GroupBox groupBox4;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn deleteCommandDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn ınsertCommandDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn selectCommandDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn updateCommandDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn updateBatchSizeDataGridViewTextBoxColumn;
-        private DataGridViewCheckBoxColumn acceptChangesDuringFillDataGridViewCheckBoxColumn;
-        private DataGridViewCheckBoxColumn acceptChangesDuringUpdateDataGridViewCheckBoxColumn;
-        private DataGridViewCheckBoxColumn continueUpdateOnErrorDataGridViewCheckBoxColumn;
-        private DataGridViewTextBoxColumn fillLoadOptionDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn missingMappingActionDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn missingSchemaActionDataGridViewTextBoxColumn;
-        private DataGridViewCheckBoxColumn returnProviderSpecificTypesDataGridViewCheckBoxColumn;
         private BindingSource sqlDataAdapterBindingSource;
         private BindingSource connectionStringSettingsBindingSource;
     }
